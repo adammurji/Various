@@ -1,3 +1,5 @@
+//Simple Telnet client in C
+
 #include <stdio.h>
 #include <sys/socket.h>
 #include <stdlib.h>
