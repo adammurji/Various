@@ -1,0 +1,8 @@
+//open up google, insert Transport Canada into the form and get the first result that contains the word 'canada' in its URL
+describe('Test Google', () => {
+	it('Visit\'s Google', () => {
+		cy.visit('https://google.ca')
+		cy.get('[name=q]').type('Transport Canada{enter}')
+		cy.get('a[href*="canada"]').first()
+	})
+})
